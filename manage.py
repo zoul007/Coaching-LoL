@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Django's command-line utility asd  Gerardo for administrative tasa sadsdasd ks. asdasdasd"""
+"""Django's command-line utility asd  Gerardo for administrative tasa sadsdasd ks. asdasdasd 123123"""
 import os
 import sys
 
