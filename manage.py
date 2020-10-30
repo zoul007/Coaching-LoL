@@ -1,7 +1,12 @@
 #!/usr/bin/env python
-"""Django's command-line utility asd for administrative tasks."""
+"""Django's command-line utility asd for administrative tasks.
+asdadasdasdasdasda
+asdadasdasdasdasda"""
+
+
 import os
 import sys
+
 
 
 def main():
