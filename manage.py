@@ -1,8 +1,13 @@
 #!/usr/bin/env python
-"""Djanguito bonito   version 1.2 command-line utility asd  qwe12 Gerardo ahumada ldsff opez asdasfdg for administrative tasks."""
+"""Django's command-line utility asd for administrative tasks."""
 import os
 import sys
+"""asdasdasdasd Felipe
+test asjhdjahsdahkhdkahskj
 
+prueb a 4
+
+"""
 
 def main():
     """Run administrative tasks."""
