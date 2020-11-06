@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Djanguito bonito  command-line utility asd  qwe12 Gerardo ahumada ldsff opez asdasfdg for administrative tasks."""
+"""Djanguito bonito   version 1.2 command-line utility asd  qwe12 Gerardo ahumada ldsff opez asdasfdg for administrative tasks."""
 import os
 import sys
 
