@@ -1,4 +1,3 @@
-{% load template %}
 {% load templates %}
 $(document).ready(function(){
 

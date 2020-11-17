@@ -1,4 +1,4 @@
-{% load template %}
+{% load templates %}
 
 window.addEventListener('load', function(){
 	new Glider(document.querySelector('.carrusel__lista'), {
