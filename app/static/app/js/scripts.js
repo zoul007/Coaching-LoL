@@ -1,5 +1,3 @@
-{% load templates %}
-
 window.addEventListener('load', function(){
 	new Glider(document.querySelector('.carrusel__lista'), {
 		slidesToShow: 1,
@@ -34,7 +32,7 @@ window.addEventListener('load', function(){
 // INICIO VALIDACION FORMULARIO
 $(document).ready(function(){
 	$("#logo" ).click(function() {
-	  window.location.href = "{% url 'home' %}";
+	  window.location.href = "/";
 	});
 
 

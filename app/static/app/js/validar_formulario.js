@@ -1,9 +1,9 @@
-{% load templates %}
+
 $(document).ready(function(){
 
 //CLIC LOGO
 $("#logo" ).click(function() {
-	  window.location.href = "{% url 'home' %}";
+	  window.location.href = "/";
 	});
 
 // VALIDACION FORMULARIO
@@ -74,7 +74,7 @@ $("#logo" ).click(function() {
 	    submitHandler: function(form) {
 	    	alert("Datos Ingresados Correctamente!!"); // MENSAJE DE EXITO AL INGRESAR LOS DATOS.
 	      	form.submit();
-	      	window.location.href = "{% url 'home' %}"; // ENVÍA A LA PAGINA PRINCIPAL.
+	      	window.location.href = "/"; // ENVÍA A LA PAGINA PRINCIPAL.
 	    }
 
 
