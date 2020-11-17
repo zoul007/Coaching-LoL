@@ -1,3 +1,7 @@
 from django.contrib import admin
-
+from .models import Aspirante, Liga, Server
 # Register your models here.
+
+admin.site.register(Aspirante)
+admin.site.register(Liga)
+admin.site.register(Server)

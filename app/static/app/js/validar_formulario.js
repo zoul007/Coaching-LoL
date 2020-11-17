@@ -1,12 +1,12 @@
-
+{% load template %}
 $(document).ready(function(){
 
 //CLIC LOGO
 $("#logo" ).click(function() {
-	  window.location.href = "index.html";
+	  window.location.href = "{% url 'home' %}";
 	});
 
-// VALIDACION FORMULARIO	
+// VALIDACION FORMULARIO
 
 
 	//VALIDA QUE SOLO SE PUEDAN PULSAR LETRAS
@@ -41,13 +41,13 @@ $("#logo" ).click(function() {
 	        	email: true
 	      	},
 	      	list_servers:{
-	      		required: true 
+	      		required: true
 	      	},
 	      	list_ligas:{
 	      		required: true
 
 	      	}
-	      
+
 	    },
 	    // Especifica los mensajes de error de las reglas de validacion
 	    messages: {
@@ -64,7 +64,7 @@ $("#logo" ).click(function() {
 	        	email: "Favor ingresa un correo válido"
 	      	},
 	      	list_servers:{
-	      		required: " Selecciona un Servidor" 
+	      		required: " Selecciona un Servidor"
 
 	      	},
 	      	list_ligas:{
@@ -80,7 +80,7 @@ $("#logo" ).click(function() {
 
 	  });
 	});
-	
+
 
 
 });
