@@ -1,5 +1,5 @@
 body{
-    font-family: monospace, georgia, times;
+    font-family: Docker, monospace, georgia, times;
     color: #333;
     font-size: 1.3rem;
     line-height: 1.4em;
@@ -172,7 +172,7 @@ p{
     text-align: center;
     margin-top: 6rem;
     color: white;
-    position: absolute;
+    position: static;
     bottom: 0;
     width: 100%;
 }
