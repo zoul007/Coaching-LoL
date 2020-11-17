@@ -74,7 +74,7 @@ $("#logo" ).click(function() {
 	    submitHandler: function(form) {
 	    	alert("Datos Ingresados Correctamente!!"); // MENSAJE DE EXITO AL INGRESAR LOS DATOS.
 	      	form.submit();
-	      	window.location.href = "index.html"; // ENVÍA A LA PAGINA PRINCIPAL.
+	      	window.location.href = "{% url 'home' %}"; // ENVÍA A LA PAGINA PRINCIPAL.
 	    }
 
 
