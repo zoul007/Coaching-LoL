@@ -1,12 +1,47 @@
-<!DOCTYPE html>
-<html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+{% extends 'app/base.html' %}
+{% load static %}
 
-    <h2>PAGINA PARA LA GALERIA</h2>
+{% block js%}
 
-  </body>
-</html>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+{% endblock %}
+
+{% block contenido %}
+<main>
+  <div class="contenedor">
+
+
+
+
+
+    <div class="galeria">
+      <a data-fancybox="gallery" href="{% static 'app/images/carrusel1.jpg'%}">
+        <img src="{% static 'app/images/carrusel1.jpg'%}"></a>
+
+      <a data-fancybox="gallery" href="{% static 'app/images/carrusel2.jpg'%}">
+        <img src="{% static 'app/images/carrusel2.jpg'%}"></a>
+
+      <a data-fancybox="gallery" href="{% static 'app/images/carrusel3.jpg'%}">
+        <img src="{% static 'app/images/carrusel3.jpg'%}"></a>
+
+      <a data-fancybox="gallery" href="{% static 'app/images/carrusel4.jpg'%}">
+        <img src="{% static 'app/images/carrusel4.jpg'%}"></a>
+
+      <a data-fancybox="gallery" href="{% static 'app/images/carrusel5.jpg'%}">
+        <img src="{% static 'app/images/carrusel5.jpg'%}"></a>
+
+      <a data-fancybox="gallery" href="{% static 'app/images/carrusel6.jpg'%}">
+        <img src="{% static 'app/images/carrusel6.jpg'%}"></a>
+
+      <a data-fancybox="gallery" href="{% static 'app/images/carrusel7.jpg'%}">
+        <img src="{% static 'app/images/carrusel7.jpg'%}"></a>
+
+
+    </div>
+
+  </div>
+</main>
+
+
+{% endblock %}
