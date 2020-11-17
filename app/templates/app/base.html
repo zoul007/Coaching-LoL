@@ -1,0 +1,68 @@
+<html lang="es">
+<STYLE>
+  A {
+    text-decoration: none;
+  }
+</STYLE>
+
+<head>
+  <title> Coaching League of Legend</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'app/css/style.css' %}">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="{% static 'app/js/scripts.js' %}"></script>
+  {% block js %}
+
+  {% endblock %}
+
+
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="contenedor completo">
+      <img id="logo" src="{% static 'app/images/logo_coaching.png'%}" alt="logo">
+      <nav class="navegacion">
+        <ul>
+          <li><a href="{% url 'home' %}"> Inicio </a></li>
+          <li><a href="{% url 'quienes_somos' %}"> Quienes Somos </a></li>
+          <li><a href="{% url 'registrate' %}"> Registrate </a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <div class="contenido_block">
+    {% block contenido %}
+
+    {% endblock %}
+
+  </div>
+
+
+
+
+
+
+
+  <footer class="footer">
+    <div class="contenedor">
+      <p>Sitio diseñada por @Gerardo_Ahumada @Felipe_Herrera</p>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

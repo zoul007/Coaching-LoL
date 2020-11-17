@@ -1,0 +1,67 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block contenido %}
+
+<main class="main">
+
+
+
+  <div class="contenedor">
+    <h1>Conviértete en Pro Gamer y haz historia, hoy</h1>
+
+    <p>Aprende con los mejores Coaches eSport en VOD Reviews, coaching personalizado, rutinas y partidas one-on-one en español. Consigue tu Pase League Coaching y contacta con tu Coach para preparar tus clases. ¡Empieza hoy tu carrera Pro Gamer en
+      League Coaching!</p>
+    <br>
+    <br>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/hdmdAPL0f2k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <br>
+  </div>
+
+
+</main>
+
+<div class="carrusel">
+  <div class="carrusel__contenedor">
+    <button aria-label="Anterior" class="carrusel__anterior">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <div class="carrusel__lista">
+      <div class="carrusel__elemento">
+        <img src="{% static 'app/images/carrusel1.jpg' %}" alt="1">
+      </div>
+      <div class="carrusel__elemento">
+        <img src="{% static 'app/images/carrusel2.jpg' %}" alt="2">
+      </div>
+      <div class="carrusel__elemento">
+        <img src="{% static 'app/images/carrusel3.jpg' %}" alt="3">
+      </div>
+      <div class="carrusel__elemento">
+
+        <img src="{% static 'app/images/carrusel4.jpg' %}" alt="4">
+      </div>
+      <div class="carrusel__elemento">
+        <img src="{% static 'app/images/carrusel5.jpg' %}" alt="5">
+      </div>
+      <div class="carrusel__elemento">
+        <img src="{% static 'app/images/carrusel6.jpg' %}" alt="6">
+      </div>
+      <div class="carrusel__elemento">
+        <img src="{% static 'app/images/carrusel7.jpg' %}" alt="7">
+      </div>
+      <div class="carrusel__elemento">
+        <img src="{% static 'app/images/carrusel8.jpg' %}" alt="8">
+      </div>
+    </div>
+
+    <button aria-label="Siguiente" class="carrusel__siguiente">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+  <div role="tablist" class="carrusel__indicadores"></div>
+</div>
+
+
+{% endblock %}

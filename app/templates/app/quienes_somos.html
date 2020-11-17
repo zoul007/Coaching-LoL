@@ -1,0 +1,31 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block contenido %}
+<main class="main">
+
+
+
+  <div class="contenedor">
+    <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/aineBLo7mX4?start=10&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe></div>
+    <div class="ranked">
+      <img src="{% static 'app/images/qs/lol-ranked-770x433.jpg' %}">
+    </div>
+    <h1>COACHING: LA MANERA MÁS RÁPIDA DE LLEGAR A LA CIMA</h1>
+    <p>League of Legends se ha convertido en el juego más popular en el mundo y sigue creciendo. Con todos los cambios implementados sobre una base constante y el nivel de complicación que aumenta con cada revisión, usted puede sentirse abrumado con
+      todo el conocimiento que usted necesita adquirir. Es por eso que tenemos servicios de entrenamiento disponibles. Al igual que en cualquier deporte, para alcanzar su máximo potencial, la ayuda de un entrenador es esencial. No sólo es entrenado
+      en ciertos aspectos del juego del que no tenía conocimiento, sino que también le dará a conocer la manera más óptima para jugar League of Legends. Nuestros entrenadores han adquirido muchos conocimientos con los años de experiencia en solitario
+      e incluso la League of Legends competitiva. Ellos han perfeccionado su oficio y quieren difundir su conocimiento del juego a todos los jugadores que luchan. Usted ni siquiera tiene que estar con un bajo ELO para aprender de nuestros
+      entrenadores profesionales. Hemos tenido incluso jugadores bajos de diamante que adquieren lecciones de entrenamiento y mejorar enormemente. Para llegar a ser el mejor, es necesario entrenar con los mejores, así que no espere más. Ordene una
+      lección de entrenamiento hoy para que se convierta en el jugador de élite que puede llegar a ser.</p>
+
+  </div>
+  <br>
+  <div class="liga">
+    <img src="{% static 'app/images/qs/lol-ligas.jpg' %}">
+  </div>
+
+</main>
+
+
+{% endblock %}
