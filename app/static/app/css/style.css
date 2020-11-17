@@ -137,7 +137,7 @@ p{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap:30px;
-  
+
 
 }
 
@@ -172,7 +172,9 @@ p{
     text-align: center;
     margin-top: 6rem;
     color: white;
-
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 * {
