@@ -16,7 +16,7 @@ class Server(models.Model):
 
 class Aspirante(models.Model):
     nombre = models.CharField(max_length = 15)
-    correo = models.CharField(max_length = 30)
+    correo = models.EmailField()
     nombre_invocador = models.CharField(max_length = 15)
     servidor = models.ForeignKey(Server, on_delete =models.PROTECT)
     Liga = models.ForeignKey(Liga, on_delete =models.PROTECT)
