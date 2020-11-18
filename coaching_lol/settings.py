@@ -123,5 +123,5 @@ STATIC_URL = '/static/'
 import os
 #URL imagenes_galeria
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join (BASE_DIR, "media")
+MEDIA_ROOT = os.path.join (BASE_DIR, 'media')
 #RUTA DONDE QUEDA ALMACENADAS LAS imagenes_galeria
