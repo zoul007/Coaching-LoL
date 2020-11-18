@@ -23,3 +23,12 @@ class Aspirante(models.Model):
 
     def __str__(self):
         return self.nombre
+
+class imagenes_galeria(models.Model):
+    nombre_ima = models.CharField(max_length = 15)
+    imagen = models.ImageField(upload_to= "galeria", null= True)
+
+    """docstring for imagenes_galeria."""
+
+    def __str__(self):
+        return self.nombre_ima
