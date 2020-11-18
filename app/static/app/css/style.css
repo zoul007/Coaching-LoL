@@ -198,6 +198,7 @@ form {
     background-color:#041c23;
     color: cornsilk;
 
+
 }
 button {
     display: inline-block;
@@ -221,10 +222,29 @@ button {
     letter-spacing: 0.05em;
 }
 
+label {
+  /*padding: 12px 12px 12px 0;*/
+  width: 100%;
+  display: inline-block;
+}
+
+input[type=text], select, input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  outline: none;
+
+}
+
 .input-field{
     margin-left: 15px;
     border: 0;
-    outline: none;
+
     padding: 10px;
 }
 

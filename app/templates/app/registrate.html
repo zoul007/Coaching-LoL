@@ -12,75 +12,27 @@
 
 
   <div class="contenedor">
-    <form action="" name="form_lol" id="form_lol">
-      </br>
-      <label> Nombre
-        </br>
-        <input type="text" name="nom_dis" id="nom_dis" class="input-field" placeholder="Faker">
-      </label>
-      </br>
-      </br>
-      <label> Contacto
-        </br>
-        <input type="email" name="email_invocador" class="input-field" placeholder="thebest@dominio.com">
-      </label>
-      </br>
-      </br>
-      <label> Nombre Invocador
-        </br>
-        <input type="text" name="nom_invocador" class="input-field" placeholder="Fakerinho">
-      </label>
-      </br>
-      </br>
-      <label> Servidor
-        </br>
-        <select name="list_servers" id="server_name" class="input-field">
-          <option disabled selected> Selecciona tu Servidor</option>
-          <option value="Korea"> Korea </option>
-          <option value="Japon"> Japon </option>
-          <option value="North_America"> North America </option>
-          <option value="Europe_West"> Europe West </option>
-          <option value="Europe_Nordic_&_East"> Europe Nordic & East </option>
-          <option value="Oceania"> Oceania </option>
-          <option value="Brazil"> Brazil </option>
-          <option value="LAS"> LAS </option>
-          <option value="LAN"> LAN </option>
-          <option value="Turkey"> Turkey </option>
-          <option value="Singapure"> Singapure </option>
-          <option value="Indonesia"> Indonesia </option>
-          <option value="Philipines"> Philipines </option>
-          <option value="Taiwan"> Taiwan </option>
-          <option value="Vietnam"> Vietnam </option>
-          <option value="Thailand"> Thailand </option>
+    <form action="" name="form_lol" id="form_lol" class="form_lol" method="post">
 
-        </select>
-      </label>
-      </br>
-      </br>
-      <label> Liga
-        </br>
-        <select name="list_ligas" id="ligas_name" class="input-field">
-          <option disabled selected> Madera </option>
-          <option value="Hierro"> Hierro </option>
-          <option value="Bronce"> Bronce </option>
-          <option value="Plata"> Plata </option>
-          <option value="Oro"> Oro </option>
-          <option value="Platino"> Platino </option>
-          <option value="Diamante"> Diamante </option>
-          <option value="Maestro"> Maestro </option>
-          <option value="GranMaster"> GranMaster </option>
-          <option value="Challenger"> Challenger </option>
+        {% csrf_token %}
+        {{ form}}
 
-        </select>
-      </label>
 
-      </br>
-      </br>
-      <button type="submit" id="botonAceptar" class="botonAceptar" value="botonAceptar"> Comienza Ahora!!</button>
 
+        <br>
+        <button type="submit" id="botonAceptar" class="botonAceptar" value="botonAceptar"> Comienza Ahora!!</button>
+
+        <br>
+        <br>
+        {% if messages %}
+          <ul class="messages">
+            {% for message in messages %}
+              <li class="{{ message.tags }}">{{ message }}</li>
+              {% endfor %}
+          </ul>
+        {% endif %}
 
     </form>
-
   </div>
   <br>
   <div class="liga">
@@ -93,7 +45,7 @@
 
 {% block js %}
 
-<script src="{% static 'app/js/validar_formulario.js' %}"></script>
+<--!script src="{% static 'app/js/validar_formulario.js' %}"></script--!>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
 
 {% endblock %}
