@@ -26,7 +26,7 @@ class Aspirante(models.Model):
 
 class imagenes_galeria(models.Model):
     nombre_ima = models.CharField(max_length = 15)
-    imagen = models.ImageField(upload_to= "galeria", null= True)
+    imagen = models.ImageField(upload_to= 'galeria/', null= True)
 
     """docstring for imagenes_galeria."""
 
