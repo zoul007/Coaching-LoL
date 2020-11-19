@@ -35,6 +35,17 @@
           <li><a href="{% url 'quienes_somos' %}"> Quienes Somos </a></li>
           <li><a href="{% url 'image_gallery' %}"> Galeria </a></li>
           <li><a href="{% url 'registrate' %}"> Registrate </a></li>
+
+          {% if user.is_authenticated %}
+          <li>
+              <a href="{% url 'logout' %}">Cerrar Sesión</a>
+          </li>
+          {% else %}
+          <li>
+              <a href="{% url 'login' %}">Iniciar Sesión</a>
+          </li>
+          {% endif %}
+
         </ul>
       </nav>
     </div>
