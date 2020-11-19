@@ -25,15 +25,9 @@ class Aspirante(models.Model):
     def __str__(self):
         return self.nombre
 
-class imagenes_galeria(models.Model):
-    nombre_ima = models.CharField(max_length = 15)
-    imagen = models.ImageField(upload_to= "galeria", null= True)
-
-    def __str__(self):
-        return self.nombre_ima
 
 class Image(models.Model):
-    image = models.ImageField(upload_to = 'galeria2')
+    image = models.ImageField(upload_to = 'galeria')
     name = models.CharField(max_length=200)
 
     def __str__(self):

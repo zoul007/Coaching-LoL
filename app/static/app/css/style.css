@@ -172,9 +172,10 @@ p{
     text-align: center;
     margin-top: 6rem;
     color: white;
-    position: static;
+    position:fixed;
     bottom: 0;
     width: 100%;
+    left: 0;
 }
 
 * {
