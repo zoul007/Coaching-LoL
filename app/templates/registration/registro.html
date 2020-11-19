@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-with, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ingresar</title>
+    <title>Registro de Usuario</title>
   </head>
   <body>
     <body>
@@ -12,16 +12,16 @@
               <div class="col-12 col-md-6 offset-md-3">
                   <div class="card">
                       <div class="card-body">
-                            <h2>Ingresar credenciales</h2>
+                            <h2>Registro Usuario</h2>
                             <hr>
                             <hr>
                             <form action="" method="post">
 
                                   {% csrf_token %}
                                   {{ form }}
-                                  <a href="{% url 'home'%}">Ir a Home</a> |
-                                  <a href="{% url 'registro'%}"">Regístrate</a>
-                                  <input type="submit" value="Ingresar" class="btn btn-success float-left">
+                                  <a href="{% url 'home'%}">Ir a Home</a>
+                                  <a href="{% url 'login'%}">Iniciar Sesión</a>
+                                  <input type="submit" value="Registrar" class="btn btn-success float-left">
 
                             </form>
 
