@@ -21,6 +21,11 @@ p{
     line-height: 1.3em;
 }
 
+.card-body h2 {
+text-align: center;
+
+}
+
 .header{
     background-color:#041c23;
     color: cornsilk;

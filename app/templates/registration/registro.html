@@ -1,38 +1,46 @@
-<!DOCTYPE html>
-<html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-with, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Registro de Usuario</title>
-  </head>
-  <body>
-    <body>
-          
-          <div class="container">
-              <div class="col-12 col-md-6 offset-md-3">
-                  <div class="card">
-                      <div class="card-body">
-                            <h2>Registro Usuario</h2>
-                            <hr>
-                            <hr>
-                            <form action="" method="post">
+{% extends 'app/base.html' %}
+{% load static %}
+{% block contenido %}
 
-                                  {% csrf_token %}
-                                  {{ form }}
-                                  <a href="{% url 'home'%}">Ir a Home</a>
-                                  <a href="{% url 'login'%}">Iniciar Sesión</a>
-                                  <input type="submit" value="Registrar" class="btn btn-success float-left">
+<main>
+<br>
+  <div class="contenedor">
 
-                            </form>
+    <div class="col-12 col-md-6 offset-md-3">
+      <div class="card">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="card-body">
+          <br>
+          <br>
+          <h2>Registro  Usuario</h2>
+          <hr>
+          <hr>
+          <form action="" method="post">
 
-                      </div>
+            {% csrf_token %}
+            {{ form }}
+            <br>
+            <a href="{% url 'home'%}">Ir a Home</a>
 
-                  </div>
+            <a href="{% url 'login'%}">Iniciar Sesión</a>
 
-              </div>
-          </div>
-    </body>
+            <input type="submit" value="Registrar" class="btn btn-success float-left">
 
-  </body>
-</html>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</main>
+<br>
+<br>
+{% endblock %}
