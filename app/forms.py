@@ -1,7 +1,8 @@
 from django import forms
 from .models import *
 from django.forms import ValidationError
-
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.models import User
 
 class AspiranteForm(forms.ModelForm):
 
@@ -36,3 +37,9 @@ class ImageForm(forms.ModelForm):
    class Meta:
       model = Image
       fields = ['image','name']
+
+class CustUserCreationForm(UserCreationForm):
+
+    class Meta:
+        model = User
+        fields = ['username', 'first_name', 'last_name' ,'email', 'password1', 'password2']
