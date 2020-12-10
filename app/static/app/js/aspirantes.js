@@ -15,8 +15,5 @@ $.get(url, function(respuesta) {
       </tr>
     `
   })
-  /*$("#aspirante").text(aspirante.nombre_invocador)*/
-
-
 
 }, "json")
