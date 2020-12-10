@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 
 from django.contrib.auth.views import (
 PasswordResetView, # suggestion: PasswordResetView
@@ -8,7 +8,13 @@ PasswordResetCompleteView
 )
 from django.contrib.auth import views as auth_views
 from . import views
-from.views import home, galeria, quienes_somos, registrate, registro
+from.views import home, galeria, quienes_somos, registrate, registro, AspiranteViewset
+from rest_framework import routers
+
+
+router = routers.DefaultRouter()
+router.register ('aspirante', AspiranteViewset)
+
 
 urlpatterns = [
     path('', home, name="home"),
@@ -20,5 +26,6 @@ urlpatterns = [
     path('reset-password/', PasswordResetView.as_view(), name='password_reset'),
     path('reset-password/confirm/<uidb64>/<token>/', PasswordResetConfirmView, name='password_reset_confirm'),
     path('reset-password-complete/', PasswordResetCompleteView, name='password_reset_complete'),
+    path('api/', include(router.urls)),
 
 ]

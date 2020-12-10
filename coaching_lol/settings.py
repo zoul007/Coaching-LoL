@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app.apps.AppConfig',
     'colorfield',
+    'rest_framework',
 ]
 
 X_FRAME_OPTIONS_='SAMEORIGIN'
