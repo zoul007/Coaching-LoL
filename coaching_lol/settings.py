@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'app.apps.AppConfig',
     'colorfield',
     'rest_framework',
+    'pwa',
 ]
 
 X_FRAME_OPTIONS_='SAMEORIGIN'
@@ -148,3 +149,23 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'zoulpro@gmail.com'
 EMAIL_HOST_PASSWORD = 'PROXXXasdf1!'
 DEFAULT_FROM_EMAIL = 'TestSite Team <noreply@example.com>'
+
+PWA_APP_NAME = 'COACHING_LOL'
+PWA_APP_DESCRIPTION = 'Pagina de Coaching'
+PWA_APP_THEME_COLOR = 'red'
+PWA_APP_BACKGROUND_COLOR = 'purple'
+
+PWA_APP_ICONS=[
+    {
+        "src": "/static/app/images/coachingIcon.jpg",
+        "sizes": "256x256"
+    }
+]
+
+PWA_APP_ICONS_APPLE=[
+
+    {
+        "src": "/static/app/images/coachingIcon.jpg",
+        "sizes": "256x256"
+    }
+]
