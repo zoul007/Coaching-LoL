@@ -30,16 +30,17 @@ text-align: center;
 .header{
     background-color:#041c23;
     color: cornsilk;
-
     position: fixed; /* posicion fija del header */
     left: 0;        /*define la posicion en que este*/
     top: 0;
     width: 100%; /* ocupe en ancho completo */
 }
     .header a{
+        float: left;
         color: white;
         text-decoration: none;
         font-size: 1rem;
+
 
     }
 
@@ -61,16 +62,16 @@ text-align: center;
 
 .navegacion ul li a{
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 14px 16px;
     transition: all 0.4s linear;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 .navegacion ul li a:hover {
     background-color: grey;
 }
 
 .main {
-    padding-top:10rem;
+    padding-top:20rem;
 }
 
 
