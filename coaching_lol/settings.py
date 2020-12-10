@@ -150,6 +150,8 @@ EMAIL_HOST_USER = 'zoulpro@gmail.com'
 EMAIL_HOST_PASSWORD = 'PROXXXasdf1!'
 DEFAULT_FROM_EMAIL = 'TestSite Team <noreply@example.com>'
 
+
+
 PWA_APP_NAME = 'COACHING_LOL'
 PWA_APP_DESCRIPTION = 'Pagina de Coaching'
 PWA_APP_THEME_COLOR = 'red'

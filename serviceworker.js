@@ -45,19 +45,20 @@ self.addEventListener('activate', event => {
     )
 });*/
 
-self.addEventListener("fetch", function(event)){
+
+// Serve from Cache
+self.addEventListener("fetch", function(event) {
   event.respondWith(
     fetch(event.request)
-    .then(function(result){
+    .then(function(result) {
       return caches.open(staticCacheName)
-      .then(function(c){
+      .then(function(c) {
         c.put(event.request.url, result.clone())
         return result;
       })
     })
-    .catch(function(e){
+    .catch(function(e) {
       return caches.match(event.request);
     })
-
   )
-}
+});
