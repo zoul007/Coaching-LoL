@@ -29,6 +29,10 @@ def galeria(request):
 def quienes_somos(request):
     return render (request, 'app/quienes_somos.html')
 
+def aspirantes(request):
+    return render (request, 'app/aspirantes.html')
+
+
 
 def registrate(request):
     data = {

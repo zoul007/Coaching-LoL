@@ -7,4 +7,5 @@ class AspiranteSerializer (serializers.ModelSerializer):
 
     class Meta:
         model = Aspirante
-        fields = '__all__'
+        fields = ('nombre_invocador','nombre_liga', 'nombre_servidor' )
+        depth = 3

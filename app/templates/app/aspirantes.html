@@ -1,0 +1,76 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block contenido %}
+
+<main class="main">
+
+
+
+  <div class="contenedor">
+    <h1>Conoce nuestros Aspirantes que ya trabajan con nosotros</h1>
+
+
+    <br>
+    <br>
+    <br>
+        <table class="table table-bordered table-dark">
+          <thead>
+            <tr>
+              <th scope="col">Nombre de Invocador</th>
+              <th scope="col">Liga </th>
+              <th scope="col">Servidor</th>
+            </tr>
+          </thead>
+
+          <tbody id="res">
+
+          </tbody>
+        </table>
+
+    <br>
+    <br>
+  </div>
+
+
+</main>
+
+<div class="carrusel">
+  <div class="carrusel__contenedor">
+    <button aria-label="Anterior" class="carrusel__anterior">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <div class="carrusel__lista">
+
+      <div class="carrusel__elemento">
+
+        <img src="{% static 'app/images/carrusel4.jpg' %}" alt="4">
+      </div>
+      <div class="carrusel__elemento">
+        <img src="{% static 'app/images/carrusel5.jpg' %}" alt="5">
+      </div>
+      <div class="carrusel__elemento">
+        <img src="{% static 'app/images/carrusel6.jpg' %}" alt="6">
+      </div>
+
+      <div class="carrusel__elemento">
+        <img src="{% static 'app/images/carrusel8.jpg' %}" alt="8">
+      </div>
+    </div>
+
+    <button aria-label="Siguiente" class="carrusel__siguiente">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+  <div role="tablist" class="carrusel__indicadores"></div>
+</div>
+<br>
+<br>
+<br>
+
+
+{% endblock %}
+
+{% block api %}
+<script src="/static/app/js/aspirantes.js"> </script>
+{% endblock %}

@@ -8,7 +8,7 @@ PasswordResetCompleteView
 )
 from django.contrib.auth import views as auth_views
 from . import views
-from.views import home, galeria, quienes_somos, registrate, registro, AspiranteViewset
+from.views import home, galeria, quienes_somos, registrate, registro, aspirantes, AspiranteViewset
 from rest_framework import routers
 
 
@@ -22,6 +22,7 @@ urlpatterns = [
     path('registrate/', registrate, name="registrate"),
     path('image_gallery/', views.image_gallery, name='image_gallery'),
     path('registro/', registro , name="registro"),
+    path('aspirantes/', aspirantes , name="aspirantes"),
     path('reset-password/done/', PasswordResetDoneView.as_view(), name='password_reset_done'),
     path('reset-password/', PasswordResetView.as_view(), name='password_reset'),
     path('reset-password/confirm/<uidb64>/<token>/', PasswordResetConfirmView, name='password_reset_confirm'),
