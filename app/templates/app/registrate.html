@@ -2,7 +2,7 @@
 {% load static %}
 
 
-
+{% load crispy_forms_tags %}
 
 
 {% block contenido %}
@@ -15,7 +15,7 @@
     <form action="" name="form_lol" id="form_lol" class="form_lol" method="post">
 
         {% csrf_token %}
-        {{ form}}
+        {{ form | crispy }}
 
 
 
