@@ -35,14 +35,15 @@ text-align: center;
     top: 0;
     width: 100%; /* ocupe en ancho completo */
 }
-    .header a{
-        float: left;
-        color: white;
-        text-decoration: none;
-        font-size: 1rem;
+.header a{
+
+  float: left;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
 
 
-    }
+}
 
 .completo{
     display: flex ;
@@ -71,7 +72,7 @@ text-align: center;
 }
 
 .main {
-    padding-top:20rem;
+    padding-top:15rem;
 }
 
 
@@ -276,4 +277,22 @@ input[type=text], select, input[type=email] {
 
     background : red;
 
+}
+
+
+
+
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+
+/* selected link */
+a:active {
+  color: blue;
 }
